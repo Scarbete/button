@@ -1,0 +1,38 @@
+
+* { /* Обращение ко всем элементам */
+    margin: 0; /* внешние отступы */
+    padding: 0; /* внутренние отступы */
+    box-sizing: border-box; /* делаем так чтобы размеры не изменялись от оригинальных значений */
+    border: none;
+    outline: none;
+    background: none;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    transition: 500ms;
+}
+
+button {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: orange;
+    text-transform: uppercase;
+    color: white;
+    transition: 500ms;
+}
+
+button:hover {
+    transform: rotate(360deg);
+    transition: 500ms;
+}
